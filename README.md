@@ -112,6 +112,27 @@ method = "GET"
 
 ---
 
+## Contributing
+
+Want to help Luna grow? Here's how:
+
+### Request a New Site
+[Open an issue](../../issues/new?template=site_request.md&title=[Site%20Request]%20) and include:
+- Site name and URL
+- Profile URL format (e.g., `https://example.com/user/{username}`)
+- How to detect if a user exists (status code, page content, etc.)
+
+### Report a Bug
+[Open an issue](../../issues/new?template=bug_report.md&title=[Bug]%20) and describe:
+- What happened vs. what you expected
+- Steps to reproduce
+- Any error messages
+
+### Suggest a Feature
+Have an idea? [Open an issue](../../issues/new?template=feature_request.md&title=[Feature]%20) and tell us about it!
+
+---
+
 ## Legal Disclaimer
 
 Luna is intended for **legitimate security research and OSINT purposes only**. Users are responsible for ensuring their use complies with applicable laws and terms of service.
@@ -125,3 +146,4 @@ Built by **Stiz Solutions** 🌙
 - Inspired by [Sherlock](https://github.com/sherlock-project/sherlock)
 
 - Site data from [WhatsMyName](https://github.com/WebBreacher/WhatsMyName)
+
