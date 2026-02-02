@@ -7,9 +7,9 @@ Luna searches 150+ websites and social platforms to find where a username is reg
 ---
 
 ## Quick Start
-
-1. Run `luna.exe`
-2. Type a username and press **Enter** to start searching!
+1. Download and unzip the .zip from `Releases` 
+2. Run `luna.exe`
+3. Type a username and press **Enter** to start searching!
 
 ---
 
@@ -123,4 +123,5 @@ Luna is intended for **legitimate security research and OSINT purposes only**. U
 Built by **Stiz Solutions** 🌙
 
 - Inspired by [Sherlock](https://github.com/sherlock-project/sherlock)
+
 - Site data from [WhatsMyName](https://github.com/WebBreacher/WhatsMyName)
