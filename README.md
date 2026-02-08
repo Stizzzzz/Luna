@@ -196,18 +196,34 @@ Accept = "text/html"
 Luna looks for `config.toml` in the current directory:
 ```toml
 [general]
-exclude_adult = true
 
-[tui]
-refresh_rate_ms = 100
+workers = 50
 
-[export]
-output_dir = "exports"
-default_format = "json"
+timeout = 10000
+
+colors = true
+
+default_categories = []
+
+exclude_adult = false
 
 [http]
-default_timeout_ms = 10000
-max_retries = 2
+
+follow_redirects = true
+
+max_redirects = 10
+
+compression = true
+
+cookies = true
+
+[rate_limit]
+
+global_rps = 100
+
+default_delay_ms = 100
+
+burst_size = 10
 ```
 
 ---
@@ -366,5 +382,6 @@ Built by **Stiz Solutions** 🌙
 - Inspired by [Sherlock](https://github.com/sherlock-project/sherlock)
 
 - Site data from [WhatsMyName](https://github.com/WebBreacher/WhatsMyName)
+
 
 
