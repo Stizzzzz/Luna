@@ -1,6 +1,6 @@
 # ⏾ Luna
 
-**Modern OSINT reconnaissance suite — search usernames, emails, phones, IPs, and domains.**
+**OSINT reconnaissance suite — search usernames, emails, phones, IPs, and domains.**
 
 Luna is a comprehensive OSINT toolkit featuring 5 modules for investigating digital footprints across the web.
 
@@ -267,3 +267,4 @@ Built by **Stiz Solutions** ⏾
 - Site data from [WhatsMyName](https://github.com/WebBreacher/WhatsMyName)
 - IP geolocation from [ip-api.com](https://ip-api.com)
 - SSL data from [crt.sh](https://crt.sh)
+
