@@ -161,22 +161,47 @@ luna.exe --headless <query> -w 100 -t 5000
 Create a `.toml` file in `sites/<category>/`:
 ```toml
 [site]
-name = "Example"
-category = "social"
+name = "Example Site"
+
+# Options: social, developer, gaming, creative, video, music, professional,
+#          forums, blogging, finance, dating, messaging, misc, adult
+category = "misc"
+
 url_template = "https://example.com/user/{username}"
+
 enabled = true
+
+description = "Example site for demonstration"
+
+requires_login = false
+
 nsfw = false
 
 [detection]
-method = "status"  # status, content, json, redirect, selector
-valid_statuses = [200]
-invalid_statuses = [404]
+method = "content" # "status", "content", "selector", "json", "redirect"
+
+not_found_patterns = [
+    "User not found",
+    "Page not found",
+    "404",
+    "doesn't exist",
+]
 
 [request]
-method = "GET"
+method = "GET" # HTTP method (GET, POST, HEAD)
 
 [request.headers]
-Accept = "text/html"
+Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+Accept-Language = "en-US,en;q=0.5"
+
+[username]
+min_length = 1
+
+max_length = 50
+
+allowed_pattern = "^[a-zA-Z0-9_.-]+$"
+
+case_sensitive = false
 ```
 
 ### Detection Methods
@@ -267,4 +292,5 @@ Built by **Stiz Solutions** ⏾
 - Site data from [WhatsMyName](https://github.com/WebBreacher/WhatsMyName)
 - IP geolocation from [ip-api.com](https://ip-api.com)
 - SSL data from [crt.sh](https://crt.sh)
+
 
